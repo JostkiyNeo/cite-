@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Дошка оголошень — для повсякденного життя</title>
+  <meta name="description" content="Дошка оголошень для людей, місць та можливостей навколо вас.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-sofa" viewBox="0 0 24 24"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z"/><path d="M4 18v2M20 18v2"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+</svg>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">
+      <svg class="logo__mark" viewBox="0 0 26 26" aria-hidden="true"><rect x="1" y="1" width="11" height="11" rx="2.5" fill="#236b4c"/><rect x="14" y="1" width="11" height="11" rx="2.5" fill="#1b3b2f"/><rect x="1" y="14" width="11" height="11" rx="2.5" fill="#1b3b2f"/><rect x="14" y="14" width="11" height="11" rx="2.5" fill="#236b4c"/></svg>
+      Дошка оголошень
+    </a>
+    <nav class="nav" aria-label="Головна навігація">
+      <button class="nav__trigger" type="button" data-mega-toggle aria-expanded="false" aria-controls="mega">
+        Переглянути оголошення <svg class="i"><use href="#i-chevron"/></svg>
+      </button>
+    </nav>
+    <div class="header__actions">
+      <a class="nav__link" href="#">Реєстрація</a>
+      <a class="btn btn--primary btn--sm" href="create.html">Викласти оголошення <svg class="i"><use href="#i-arrow"/></svg></a>
+      <button class="burger" type="button" data-mega-toggle aria-expanded="false" aria-controls="mega" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <div class="mega" id="mega">
+    <div class="container mega__inner">
+      <h2 class="mega__title">Що привело вас на дошку оголошень?<span>|</span><span class="mega__alt">Яка мета вашого візиту?</span></h2>
+      <div class="mega__cols">
+        <div class="mega-card">
+          <svg class="i"><use href="#i-sofa"/></svg>
+          <h3>Товари на продаж</h3>
+          <p class="mega-card__sub">Меблі, товари для дому та побутові дрібниці</p>
+          <ul>
+            <li><a href="listings.html">Меблі та товари для дому</a></li>
+            <li><a href="listings.html">Велосипеди та активний відпочинок</a></li>
+            <li><a href="listings.html">Книги та одяг</a></li>
+          </ul>
+          <a class="link" href="listings.html">Переглянути цю категорію <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="mega-card">
+          <svg class="i"><use href="#i-wrench"/></svg>
+          <h3>Місцеві послуги</h3>
+          <p class="mega-card__sub">Хороші люди з корисними навичками</p>
+          <ul>
+            <li><a href="listings.html">Ремонт і послуги майстрів</a></li>
+            <li><a href="listings.html">Уроки та репетиторство</a></li>
+            <li><a href="listings.html">Дім та огород</a></li>
+          </ul>
+          <a class="link" href="listings.html">Переглянути цю категорію <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="mega-card">
+          <svg class="i"><use href="#i-briefcase"/></svg>
+          <h3>Пошук роботи</h3>
+          <p class="mega-card__sub">Знайдіть своїх працівників</p>
+          <ul>
+            <li><a href="listings.html">Часткова та повна зайнятість</a></li>
+            <li><a href="listings.html">Фриланс-проєкти</a></li>
+            <li><a href="listings.html">Творчі партнери</a></li>
+            <li><a href="listings.html">Можливості для волонтерства</a></li>
+          </ul>
+          <a class="link" href="listings.html">Переглянути цю категорію <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="mega__links">
+        <div>
+          <h4>Мій аккаунт</h4>
+          <div><a href="#">Вхід</a><a href="#">Створити обліковий запис</a><a href="#">Мої повідомлення</a></div>
+        </div>
+        <div>
+          <h4>Публікація та допомога</h4>
+          <div><a href="#">Як це працює</a><a href="#">Розміщення на видному місці</a><a href="#">Правила публікації</a></div>
+        </div>
+      </div>
+      <div class="promo">
+        <div>
+          <h3>Є новини чи оголошення?</h3>
+          <p>Стандартне оголошення безкоштовно протягом 30 днів. Рекомендоване (пріоритетне) розміщення коштує 300UAH на 7 днів.</p>
+        </div>
+        <div class="promo__btns">
+          <a class="btn btn--primary" href="create.html">Викласти оголошення <svg class="i"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--outline" href="listings.html">Переглянути всі оголошення <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Дошка оголошень для повсякденного життя.</h1>
+      <div class="tiles">
+        <a class="tile" href="listings.html"><svg class="i"><use href="#i-sofa"/></svg>Товари на продаж</a>
+        <a class="tile" href="listings.html"><svg class="i"><use href="#i-wrench"/></svg>Місцеві послуги</a>
+        <a class="tile" href="listings.html"><svg class="i"><use href="#i-briefcase"/></svg>Пошук роботи</a>
+      </div>
+
+      <div class="section-head">
+        <h2>Щойно на дошці</h2>
+        <a class="link" href="listings.html">Переглянути усі <svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="grid grid--4">
+        <a class="ad-card" href="listing.html">
+          <div class="ad-card__img"><img src="images/electrician.jpg" alt="Електрик за роботою" loading="lazy"></div>
+          <div class="ad-card__body">
+            <div class="ad-card__meta"><span class="tag">Місцеві послуги</span><span>5 жов</span></div>
+            <h3 class="ad-card__title">Послуги електрика</h3>
+            <p class="ad-card__text">Потрібен електрик? Виконую монтаж проводки, заміну розеток та усунення несправностей.</p>
+            <p class="ad-card__price">500UAH/Година</p>
+          </div>
+        </a>
+        <a class="ad-card" href="listing.html">
+          <div class="ad-card__img"><img src="images/bike.jpg" alt="Велосипед" loading="lazy"></div>
+          <div class="ad-card__body">
+            <div class="ad-card__meta"><span class="tag">Товари на продаж</span><span>5 жов</span></div>
+            <h3 class="ad-card__title">Продам велосипед UP</h3>
+            <p class="ad-card__text">Велосипед у відмінному технічному стані, повністю налаштований та готовий до сезону.</p>
+            <p class="ad-card__price">Вартість 1200 UAH</p>
+          </div>
+        </a>
+        <a class="ad-card" href="listing.html">
+          <div class="ad-card__img"><img src="images/golf.jpg" alt="Volkswagen Golf MK1" loading="lazy"></div>
+          <div class="ad-card__body">
+            <div class="ad-card__meta"><span class="tag">Товари на продаж</span><span>17 жов</span></div>
+            <h3 class="ad-card__title">Продам WF Golf MK1</h3>
+            <p class="ad-card__text">Продам автомобіль у відмінному стані 1979 року з мотором 1,6 GTI</p>
+            <p class="ad-card__price">Вартість 1000 USD$</p>
+          </div>
+        </a>
+        <a class="ad-card" href="listing.html">
+          <div class="ad-card__img"><img src="images/coffee.jpg" alt="Кава" loading="lazy"></div>
+          <div class="ad-card__body">
+            <div class="ad-card__meta"><span class="tag">Пошук роботи</span><span>4 жов</span></div>
+            <h3 class="ad-card__title">В пошуках баристи</h3>
+            <p class="ad-card__text">Любиш готувати якісну каву? Приєднуйся до нашої команди! Гнучкий графік та чудова атмосфера.</p>
+            <p class="ad-card__price">750UAH / Годин</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how">
+    <div class="container">
+      <p class="eyebrow">Додайте ваше оголошення</p>
+      <h2 class="h2">Ваш наступний зв’язок починається з повідомлення.</h2>
+      <div class="how__grid">
+        <div>
+          <ol class="steps" style="list-style:none;padding:0;margin:0 0 28px">
+            <li class="step"><span class="step__n">01</span>Ваш наступний зв'язок починається з повідомлення.</li>
+            <li class="step"><span class="step__n">02</span>Безкоштовно опублікуйте оголошення на 30 днів або додайте виділене розміщення за 500UAH, щоб виділятися протягом 7 днів.</li>
+            <li class="step"><span class="step__n">03</span>Спілкуйтеся напряму.</li>
+          </ol>
+          <a class="btn btn--primary" href="create.html">Викласти оголошення <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <article class="how__card">
+          <span class="tag">Товари на продаж</span>
+          <img src="images/table.jpg" alt="Обідній стіл із масиву дуба" loading="lazy">
+          <h3>Обідній стіл із масиву дуба</h3>
+          <p>Стіл, який дуже любили - готовий до нового дому.</p>
+          <strong>1300UAH</strong>
+        </article>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan__row"><span>Безкоштовний тариф</span><b>Безкоштовно</b></div>
+          <p>Стандартне розміщення</p>
+        </div>
+        <div class="plan">
+          <div class="plan__row"><span>ТОП-розміщення</span><b>700UAH/7днів</b></div>
+          <p>Додаткове просування у спеціальних блоках. Ваше оголошення залишається активним 30 днів.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules / FAQ -->
+  <section class="rules">
+    <div class="container rules__grid">
+      <div>
+        <p class="eyebrow">Корисно знати</p>
+        <h2 class="h2">Кілька правил перед публікацією.</h2>
+        <p>Проста дошка працює найкраще, коли ми всі дотримуємося єдиних правил.</p>
+        <a class="link" href="#">Ознайомтеся з нашими правилами публікації <svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Що можна розміщувати на дошці?</summary>
+          <p>Товари на продаж або безкоштовно, місцеві послуги, події громади, вакансії та пошук однодумців. Головне — законність, локальність та зрозумілий опис.</p>
+        </details>
+        <details>
+          <summary>Скільки коштує оголошення?</summary>
+          <p>Стандартне оголошення безкоштовне на 30 днів. ТОП-розміщення є опціональним і коштує 700 грн на 7 днів. Комісій з продажів немає.</p>
+        </details>
+        <details>
+          <summary>Як зі мною зв'яжуться покупці?</summary>
+          <p>Люди надсилають повідомлення безпосередньо через ваше оголошення. Ваш email не публікується. Ви самі вирішуєте, коли ділитися контактами.</p>
+        </details>
+        <details>
+          <summary>Як зробити обмін або покупку безпечною?</summary>
+          <p>Домовляйтеся про деталі заздалегідь, перевіряйте речі особисто та зустрічайтеся у зручних публічних місцях. Ніколи не надсилайте завдаток незнайомцям.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__box">
+        <div>
+          <h3>Будьте в курсі новин.</h3>
+          <p>Отримуйте щотижневу добірку актуальних оголошень</p>
+        </div>
+        <form action="#" method="post">
+          <label for="nl-email">Email адреса</label>
+          <div class="newsletter__row">
+            <input class="input" id="nl-email" type="email" placeholder="you@example.com" required>
+            <button class="btn btn--primary" type="submit">Підписатися <svg class="i"><use href="#i-arrow"/></svg></button>
+          </div>
+          <small>Натискаючи «Підписатися», ви погоджуєтеся з нашою політикою конфіденційності. Скасувати підписку можна будь-коли.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <svg class="logo__mark" viewBox="0 0 26 26" aria-hidden="true"><rect x="1" y="1" width="11" height="11" rx="2.5" fill="#b6e36b"/><rect x="14" y="1" width="11" height="11" rx="2.5" fill="#6fb77f"/><rect x="1" y="14" width="11" height="11" rx="2.5" fill="#6fb77f"/><rect x="14" y="14" width="11" height="11" rx="2.5" fill="#b6e36b"/></svg>
+          Дошка оголошень
+        </a>
+        <p>Хороші речі відбуваються поруч. Дошка оголошень для людей, місць та можливостей навколо вас.</p>
+      </div>
+      <div><h4>Категорії</h4><ul><li><a href="listings.html">Товари на продаж</a></li><li><a href="listings.html">Місцеві послуги</a></li><li><a href="listings.html">Пошук роботи</a></li></ul></div>
+      <div><h4>Ваша дошка</h4><ul><li><a href="create.html">Подати оголошення</a></li><li><a href="#">ТОП-розміщення</a></li><li><a href="#">Мої оголошення</a></li></ul></div>
+      <div><h4>Потрібна допомога?</h4><ul><li><a href="#">Як це працює</a></li><li><a href="#">Правила публікації</a></li><li><a href="#">Зв'язатися з нами</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Дошка оголошень.</span>
+      <div><a href="#">Конфіденційність</a><a href="#">Умови використання</a><a href="#">Файли cookie</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
